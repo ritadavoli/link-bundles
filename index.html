@@ -1,0 +1,15 @@
+<a href="yahoo.com">Yahoo.com</a>
+<a href="rishel.org">rishel.org</a>
+<a href="slashdot.org">slashdot</a>
+
+<script>
+ links = document.querySelectorAll("a");
+ for( i in links) {
+  console.log(checkboxes[i]);
+}
+ function openLink(url){
+  var popup  = $window.open("about:blank", "_blank"); // the about:blank is to please Chrome, and _blank to please Firefox
+  popup.location = url;
+ }
+  
+</script>
