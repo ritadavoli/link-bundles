@@ -1,7 +1,24 @@
 .links {
-  padding: 10px;
+    padding: 10px;
+    border: 1px solid darkgrey;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    margin-top: 50px;
+}
+
+h1, .description {
+    width: 50vw;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+  margin-top: 50px;
 }
 
 .links a {
-  display: inline;
+  display: block;
 }
