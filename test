@@ -1,0 +1,19 @@
+<body onload="openLinks()">
+    <a href="https://www.yahoo.com">Yahoo.com</a>
+    <a href="http://rishel.org">rishel.org</a>
+    <a href="https://www.slashdot.org">slashdot</a>
+</body>
+
+<script>
+    function openLinks(){
+        links = document.querySelectorAll("a");
+        for (i=0; i < links.length; i++){
+            console.log(links[i].href);
+            openLink(links[i].href, i);
+        }
+    }
+    
+    function openLink(url, i){
+        window.open(url, "_blank"); // the about:blank is to please Chrome, and _blank to please Firefox
+    }
+</script>
