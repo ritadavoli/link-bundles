@@ -27,6 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (detectPopupBlocker()){
         openLinks();
     } else {
-        alert("Please disable popup blocking for this domain.")
+        document.querySelector(".blocking").classList.remove("hide");
     }
 });
