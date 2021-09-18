@@ -18,16 +18,16 @@ function simulateClick(elem) {
 }
 
 function detectPopupBlocker() {
-  var myTest = window.open("about:blank","","directories=no,height=100,width=100,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
-  var blocking;
-    
-  if (!myTest) {
-    blocking = true;  
-  } else {
-    blocking = false;
-    myTest.close();
-  }
-  return blocking;
+	var myTest = window.open("about:blank","","directories=no,height=100,width=100,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
+	var blocking;
+
+	if (!myTest) {
+		blocking = true;  
+	} else {
+		blocking = false;
+		myTest.close();
+	}
+	return blocking;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
