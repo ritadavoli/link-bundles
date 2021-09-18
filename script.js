@@ -13,7 +13,7 @@ function simulateClick(elem) {
 		view: window,
 		ctrlKey: true
 	});
-	et.ctrlKey = true;
+	evt.ctrlKey = true;
 	
 	// If cancelled, don't dispatch our event
 	var canceled = !elem.dispatchEvent(evt);
