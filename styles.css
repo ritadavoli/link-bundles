@@ -23,9 +23,12 @@ h1, .description {
   display: block;
 }
 .blocking {
+    display: none;
     margin-left: auto;
+    max-width: 300px;
+    width: 5ovw;
 }
 
-.hide {
-    display: none;
+.blocking.show {
+    display: block;
 }
