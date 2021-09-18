@@ -5,7 +5,7 @@ function openLinks(){
     }
     setTimeout(function(){
 	    document.title = "Links Opened";
-    }, 1000;
+    }, 1000);
 }
 
 function simulateClick(elem) {
