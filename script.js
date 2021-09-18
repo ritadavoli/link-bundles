@@ -3,7 +3,9 @@ function openLinks(){
     for (i=0; i < links.length; i++){
         simulateClick(links[i]);
     }
-    document.title = "Links Opened";
+    setTimeout(function(){
+	    document.title = "Links Opened";
+    }, 1000;
 }
 
 function simulateClick(elem) {
