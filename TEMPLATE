@@ -1,0 +1,23 @@
+<div class="blocking hide">
+    Please disable popup blocking for this dommain
+    <img src="../images/blocking.png">
+</div>
+
+<h1>Title of Link Bundle</h1>
+
+<div class="description">
+    Optional Link Bundle description text
+</div>
+
+<div class="links">
+    <!-- begin link block -->
+
+    <a href="https://www.yahoo.com">Yahoo.com</a>
+    <a href="http://rishel.org">rishel.org</a>
+    <a href="https://www.slashdot.org">slashdot</a>
+
+    <!-- end link block -->
+</div>
+
+<link href="../styles.css" rel="stylesheet">
+<script src="../script.js"></script>
