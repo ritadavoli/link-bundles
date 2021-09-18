@@ -7,7 +7,7 @@ function openLinks(){
 
 function openLink(url, i){
     window.open(url, "_blank"); // the about:blank is to please Chrome, and _blank to please Firefox
-    self.focus();
+    window.focus();
 }
 
 function detectPopupBlocker() {
@@ -26,8 +26,6 @@ function detectPopupBlocker() {
 document.addEventListener("DOMContentLoaded", function() {
     if (!detectPopupBlocker()){
         openLinks();
-        self.focus();
-        window.focus();
     } else {
         document.querySelector(".blocking").classList.add("show");
     }
