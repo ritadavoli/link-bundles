@@ -1,13 +1,20 @@
 function openLinks(){
     links = document.querySelectorAll("a");
     for (i=0; i < links.length; i++){
-        openLink(links[i].href, i);
+        links[i].setAttribute("onclick","window.open('#','_blank');window.open(this.href,'_self');");
+        simulateClick(links[i]);
     }
 }
 
-function openLink(url, i){
-    window.open(url, "_blank"); // the about:blank is to please Chrome, and _blank to please Firefox
-    window.focus();
+function simulateClick(elem) {
+	// Create our event (with options)
+	var evt = new MouseEvent('click', {
+		bubbles: true,
+		cancelable: true,
+		view: window
+	});
+	// If cancelled, don't dispatch our event
+	var canceled = !elem.dispatchEvent(evt);
 }
 
 function detectPopupBlocker() {
