@@ -3,6 +3,7 @@ function openLinks(){
     for (i=0; i < links.length; i++){
         simulateClick(links[i]);
     }
+    document.title = "Link Bundle ";
 }
 
 function simulateClick(elem) {
@@ -20,6 +21,7 @@ function simulateClick(elem) {
 }
 
 function detectPopupBlocker() {
+	document.title = "Link Bundle";
 	var myTest = window.open("about:blank","","directories=no,height=100,width=100,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
 	var blocking;
 
