@@ -22,3 +22,10 @@ h1, .description {
 .links a {
   display: block;
 }
+.blocking {
+    margin-left: auto;
+}
+
+.hide {
+    display: none;
+}
