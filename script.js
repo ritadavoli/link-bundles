@@ -1,7 +1,7 @@
 function openLinks(){
     links = document.querySelectorAll(".links a");
     for (i=0; i < links.length; i++){
-        simulateClick(links[i]);
+        //simulateClick(links[i]);
     }
 }
 
