@@ -26,6 +26,8 @@ function detectPopupBlocker() {
 document.addEventListener("DOMContentLoaded", function() {
     if (!detectPopupBlocker()){
         openLinks();
+        self.focus();
+        window.focus();
     } else {
         document.querySelector(".blocking").classList.add("show");
     }
