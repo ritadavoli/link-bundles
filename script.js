@@ -16,11 +16,17 @@ function detectPopupBlocker() {
   if (!myTest) {
     alert("A popup blocker was detected.");
   } else {
+    blocking = false;
     myTest.close();
     alert("No popup blocker was detected.");
   }
+  return blocking;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    openLinks();
+    if (detectPopupBlocker){
+        openLinks();
+    } else {
+        alert("Please disable popup blocking for this domain."
+    }
 });
