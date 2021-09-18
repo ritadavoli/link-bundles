@@ -24,7 +24,7 @@ function detectPopupBlocker() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (detectPopupBlocker){
+    if (detectPopupBlocker()){
         openLinks();
     } else {
         alert("Please disable popup blocking for this domain."
