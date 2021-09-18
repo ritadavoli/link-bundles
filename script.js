@@ -3,7 +3,7 @@ function openLinks(){
     for (i=0; i < links.length; i++){
         simulateClick(links[i]);
     }
-    document.title = "Link Bundle ";
+    document.title = "Links Opened";
 }
 
 function simulateClick(elem) {
