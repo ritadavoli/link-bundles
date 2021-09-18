@@ -1,7 +1,7 @@
 function openLinks(){
     links = document.querySelectorAll(".links a");
     for (i=0; i < links.length; i++){
-        links[i].setAttribute("onclick","window.open('#','_blank');window.open(this.href,'_self');");
+        links[i].setAttribute("onclick","window.open('#','_blank');self.focus();");
         //simulateClick(links[i]);
     }
 }
