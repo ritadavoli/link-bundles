@@ -1,3 +1,7 @@
-a {
+.links {
+  padding: 10px;
+}
+
+.links a {
   display: inline;
 }
