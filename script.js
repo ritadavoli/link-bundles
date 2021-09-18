@@ -1,7 +1,6 @@
 function openLinks(){
     links = document.querySelectorAll(".links a");
     for (i=0; i < links.length; i++){
-        links[i].setAttribute("onclick","window.open(this.href,'_blank');self.blur();");
         simulateClick(links[i]);
     }
 }
@@ -13,6 +12,7 @@ function simulateClick(elem) {
 		cancelable: true,
 		view: window
 	});
+	evt.shiftKey = true;
 	// If cancelled, don't dispatch our event
 	var canceled = !elem.dispatchEvent(evt);
 }
