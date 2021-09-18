@@ -10,6 +10,17 @@ function openLink(url, i){
     self.focus();
 }
 
+function detectPopupBlocker() {
+  var myTest = window.open("about:blank","","directories=no,height=100,width=100,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
+  var blocking = true;
+  if (!myTest) {
+    alert("A popup blocker was detected.");
+  } else {
+    myTest.close();
+    alert("No popup blocker was detected.");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     openLinks();
 });
