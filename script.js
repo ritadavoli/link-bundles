@@ -7,6 +7,7 @@ function openLinks(){
 
 function openLink(url, i){
     window.open(url, "_blank"); // the about:blank is to please Chrome, and _blank to please Firefox
+    self.focus();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
